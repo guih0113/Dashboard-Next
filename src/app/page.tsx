@@ -3,7 +3,6 @@ import { Sales } from "@/components/sales";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { BadgeDollarSign, DollarSign, Percent, Users } from "lucide-react";
 
-
 export default function Home() {
   return (
     <main className="sm:ml-14 p-4">

@@ -1,4 +1,4 @@
-import { Sheet, SheetTrigger, SheetContent } from '@/components/ui/sheet'
+import { Sheet, SheetTrigger, SheetContent, SheetTitle } from '@/components/ui/sheet'
 import { Button } from '../ui/button'
 import Link from 'next/link'
 import { Home, LogOut, Package, PanelBottom, Settings2, ShoppingBag, Users } from 'lucide-react'
@@ -89,6 +89,7 @@ export function Sidebar(){
                     </TooltipProvider>
                 </nav>
             </aside>
+            
             <div className="sm:hidden flex flex-col sm:gap-4 sm:py-6 sm:pl-16">
                 <header 
                     className='sticky top-0 z-30 flex h-14 items-center px-4 border-b bg-background gap-4 sm:static sm:h-auto sm:border-0 sm:bg-transparent sm:px-6'
@@ -102,6 +103,7 @@ export function Sidebar(){
                         </SheetTrigger>
 
                         <SheetContent side="left" className='sm:max-w-x p-6'>
+                            <SheetTitle className="sr-only">Menu de Navegação</SheetTitle> 
                             <nav className='grid gap-6 text-lg font-medium'>
                                 <Link 
                                     href="#"
